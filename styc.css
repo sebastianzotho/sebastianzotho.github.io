@@ -1,0 +1,252 @@
+/*reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+/* start yur code*/
+.inicio{
+    display: flex;
+    background: url(image/night.jpg);
+}
+.icon1{
+    margin-left: 70%;
+    color: white;
+    font-size: 30px;
+    margin-top: 12px;
+}
+.icon2{
+    margin-left: 10px;
+    color: rgb(10, 73, 209);
+    font-size: 30px;
+    margin-top: 12px;
+}
+.alura{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 80px;
+}
+.main{
+    display: flex;
+    background-color:#c5c8d1;
+}
+.texto{
+    width: 650px;
+    height: 600px;
+    margin-left: 120px;
+    margin-right: 30px;
+    border: none; /* Quita los bordes por defecto */
+    padding: 10px;
+    background-color: #c5c8d1;
+    outline: none; /* Quita el contorno al enfocar el elemento */
+    font-size: 30px;
+    caret-color: grey;/* Cambia el color del indicador */
+    color:grey;
+
+}
+.texto::-webkit-scrollbar {
+    width: 12px;
+}
+.texto::-webkit-scrollbar-thumb{
+    background: #235aa1;
+    border-radius: 50px;
+}
+.texto::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+.texto::placeholder{
+    text-align: left;
+    color:grey;
+    font-size: 25px; /* tamano texto */
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.adv{
+    display: flex;
+    margin-left: 180px;
+}
+.letra1{
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.but_incrip{
+    color: #d8dfe8;
+    background-color: #064291;
+    margin-left: 32%;
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-color: #0059ce;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.but_desen{
+    background-color: #92afd6;
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-color: #bcd9ff;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.result{
+    position: relative;
+    background: url(image/Muñeco.png) center center no-repeat;
+    width: 505px;
+    height: 600px;
+    border-radius: 40px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 1 10px 30px;
+    /*user-select: text;/* Estilo para permitir la selección de texto */
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+.result::-webkit-scrollbar {
+    width: 11px;
+    bottom: 14px;
+}
+.result::-webkit-scrollbar-thumb{
+    background: #58595a;
+    border-radius: 50px;
+}
+.result::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+.line{
+    text-align: center;
+    margin-top: -10px;
+}
+.copiar{
+    margin-left: 180px;  
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-color: rgb(255, 255, 255);
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section1{
+    background-color: #c5c8d1;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section2{
+    background-color: #d8dfe8;
+    width: 40%;
+    margin-right: 120px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foot{
+    background: url(image/night.jpg);
+    
+}
+.imfoot{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: right;
+    width: 90px;
+    height: 32px;
+    margin-left: 90%;
+}
+/* responsive */
+@media screen and (max-width:480px) {
+    .inicio{
+        display: flex;
+        max-width: 100%;
+    }
+    .icon1{
+        width: auto;
+        margin-left: 150px;
+    }
+    .alura{
+        margin-left: 2px;
+    }
+    .body{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .main{
+        display:inline-block;
+        max-width: 100%;
+    }
+    .section1{
+        max-width: 90%;
+    }
+    .texto{
+        max-width: 140%;
+        margin-left: 15%;
+    }
+    .adv{
+        margin-left: 45px;
+        width: auto;
+    }
+    .advimg{
+        width: 20px;
+        height: 25px;
+    }
+    .letra1{
+        width: auto;
+    
+    }
+    .but_incrip{
+        position:absolute;
+        margin-left: 20px;
+    }
+    .but_desen{
+        margin-left: 90%;
+    }
+    .section2{
+        max-width: 100%;
+        margin-left: 20px;
+        width: 90%;
+    }
+    .result{
+        max-width: 100%;
+        width: 100%;
+    }
+    .linep{
+        max-width: 100%;
+        width: auto;
+    }
+    .line{
+        max-width: 100%;
+        width: auto;
+    }
+    .copiar{
+        margin-left: 98px;
+    }
+    .foot{
+        max-width: 100%;
+    }
+    .imfoot{
+        max-width: 100%;
+        margin-left: 80%;
+    }
+
+}

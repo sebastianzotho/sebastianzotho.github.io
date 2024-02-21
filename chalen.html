@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styc.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Outfit:wght@600&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Outfit:wght@600&family=Roboto+Mono:ital,wght@0,700;1,700&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <title>Challengues Alura</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header class="inicio">
+            <img class="alura" src="image/Logo-1.png" alt="alura-logo">
+            <a class="icon1" href="https://github.com/sebastianzotho/sistema-de-registro"><i class="fa-brands fa-square-github"></i></a>
+            <a class="icon2"><i class="fa-brands fa-linkedin"></i></a>
+        </header>
+        <main class="main">
+            <section class="section1">
+                <textarea  oninput="validarYejecutar()"  class="texto" id="texto_usuario" required placeholder="Deja tu texto"></textarea>
+                <div class="adv">
+                    <img class="advimg" src="image/bi_exclamation-circle-fill-1.png" alt="requisito">
+                    <p class="letra1">Por favor tener en cuenta que no debe tener mayusculas y acentos</p>
+                </div>
+                <button  onclick="textoinc(),quitarImagen()" class="but_incrip" id="botonn" disabled>Encriptar</button>
+                <button onclick="textodes(),quitarImagen()" class="but_desen">Desencriptar</button>
+            </section>
+            <section class="section2">
+                <textarea class="result" id="texto_resuelto" placeholder="No hay ningun texto Incriptado" readonly></textarea>
+                <div class="linep">
+                    <p class="line">____________________________________________</p>
+                </div>
+                <button onclick="copiarTexto()" class="copiar">Copiar</button>
+            </section>
+        </main>
+        <footer class="foot">
+            <div class="linkk">
+                
+            </div>
+            <img class="imfoot" src="image/Logo@2x.png" alt="logo-abajo">
+            
+        </footer>
+        <script src="chalen.js"></script>
+    </body>
+</html>
